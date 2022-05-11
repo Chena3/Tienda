@@ -4,6 +4,6 @@
 <title>Index</title>
 </head>
 <body>
-    <p><Hola que hace/p>
+    <p> Hola que hace </p>
 </body>
 </html>
