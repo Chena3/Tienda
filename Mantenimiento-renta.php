@@ -23,22 +23,22 @@
     </div>
     <div class="row p-auto pt-4">
       <div class=" p-auto">
-        <a href="Mantenimiento-miembros.php"><div class="btn btn-success">Mantenimiento miembros</div></a>
+        <div class="btn btn-success">Mantenimiento miembros</div>
       </div>
     </div>
     <div class="row p-auto pt-4">
       <div class=" p-auto">
-        <a href="Mantenimiento-titulo.php"><div class="btn btn-success">Mantenimiento titulo</div></a>
+        <div class="btn btn-success">Mantenimiento titulo</div>
       </div>
     </div>
     <div class="row p-auto pt-4">
       <div class=" p-auto">
-        <a href="Mantenimiento-titulo-copia.php"><div class="btn btn-success">Mantenimiento titulo copia</div></a>
+        <div class="btn btn-success">Mantenimiento titulo copia</div>
       </div>
     </div>
     <div class="row p-auto pt-4">
       <div class=" p-auto">
-        <a href="Mantenimiento-renta.php"><div class="btn btn-success">Mantenimiento renta</div></a>
+        <div class="btn btn-success">Mantenimiento renta</div>
       </div>
     </div>
   </div>
