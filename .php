@@ -22,7 +22,7 @@ require('funciones.php');
     <div class="container  text-center ">
       <div class="row p-auto pt-4">
         <div class=" p-auto ">
-          <a href ="index.php"><img src="logo.jpg" alt="logo" /></a>
+          <img src="logo.jpg" alt="logo" />
         </div>
       </div>
       <div class="row p-auto pt-4">
@@ -57,7 +57,7 @@ require('funciones.php');
                 <td><?php echo $miembro['phone']; ?></td>
                 <td><?php echo $miembro['join date']; ?></td>
                 <td><a href="update_members.php?id=<?= $miembro['member_id'] ?>">
-                    <div class="btn btn-warning">modificar</div>
+                    <div class="btn btn-warning">eliminar</div>
                   </a>
                 </td>
                 <td><a href="eliminar_members.php?id=<?= $miembro['member_id'] ?>">
@@ -99,11 +99,7 @@ require('funciones.php');
             <button type="submit" class="btn btn-primary">Agregar</button>
             
           </form>
-          <div>
-          <a href="index.php">  <div class="btn btn-warning m-4">Volver</div> </a>
         </div>
-        </div>
-      
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>

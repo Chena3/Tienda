@@ -18,7 +18,7 @@
   <div class="container  text-center ">
     <div class="row p-auto pt-4">
       <div class=" p-auto ">
-        <img src="logo.jpg" alt="logo" />
+      <a href ="index.php"><img src="logo.jpg" alt="logo" /></a>
       </div>
     </div>
     <div class="row p-auto pt-4">
