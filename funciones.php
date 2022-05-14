@@ -1,5 +1,4 @@
 <?php
-require_once 'conexion.php';
 function conectar() {
     $conexion = new mysqli("localhost", "root", "", "mydb");
     if($conexion->connect_errno) {
@@ -70,5 +69,35 @@ function update_titulo($id, $title, $description, $rating, $category, $release_d
 
     $coneccion->query($sql);
     
+    desconectar($coneccion);
+}
+function getCopias($id){
+    $coneccion = conectar();
+    $sql = "SELECT * FROM title_copy WHERE title_id = $id";
+    return $coneccion->query($sql);
+}
+function update_copia($id){
+    $coneccion = conectar();
+    $RESULTADO = $coneccion->query("SELECT status FROM title_copy WHERE copy_id = $id");
+    $row = $RESULTADO->fetch_assoc();
+    if($row['status'] == 'AVAILABLE'){
+        $sql = "UPDATE title_copy SET status = 'RENTED' WHERE copy_id = $id";
+    }else{
+        $sql = "UPDATE title_copy SET status = 'AVAILABLE' WHERE copy_id = $id";
+    }
+    $coneccion->query($sql);
+    desconectar($coneccion);
+}
+function delete_copia($id){
+    $coneccion = conectar();
+    $sql = "DELETE FROM title_copy WHERE copy_id = $id";
+    $coneccion->query($sql);
+    desconectar($coneccion);
+}
+
+function create_copia($id_titulo){
+    $coneccion = conectar();
+    $sql = "INSERT INTO title_copy (title_id, status) VALUES ('$id_titulo', 'AVAILABLE')";
+    $coneccion->query($sql);
     desconectar($coneccion);
 }
